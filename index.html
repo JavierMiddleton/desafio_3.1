@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de Audis</title>
+    <!--Favicon-->
+    <link
+      rel="shortcut icon"
+      href="./assets/img/audi.jpg"
+      type="image/x-icon"
+    />
+    <!--CSS-->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <!--Body HTML-->
+  <body>
+    <main>
+      <article class="card">
+        <h1>Compra tu Audi</h1>
+        <img src="./assets/img/audi.jpg" alt="" />
+        <h2>US$ 25.000</h2>
+        <div class="container-input">
+          <input
+            class="text-input"
+            id="quantity-input"
+            type="text"
+            placeholder="Ingrese cantidad:"
+            autocomplete="off"
+            required
+          />
+        </div>
+        <div class="container-input">
+          <input
+            class="text-input"
+            id="color-input"
+            type="text"
+            placeholder="Ingrese color:"
+            autocomplete="off"
+            required
+          />
+        </div>
+        <button id="calculate-button">Calcular</button>
+      </article>
+      <article class="results">
+        <p>Total: US$ <span id="total-price"></span></p>
+        <p>Cantidad: <span id="total-quantity"></span></p>
+        <div class="color-container">
+          <p>Color:</p>
+          <div class="color-box" id="final-color"></div>
+        </div>
+      </article>
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
